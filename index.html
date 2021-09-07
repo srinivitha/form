@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="style.css">
+    <title>DOM Manipulation with Forms
+    </title>
+
+</head>
+<body>
+    <form class="form" onsubmit="myfunction(); return false" required>
+        <p class="name">Name:</p>
+        <input type="text" id="fname" placeholder="First Name">
+        <input type="text" id="lname" placeholder="Last Name">
+       <p class="gen<h1>Details of Candidate:</h1>
+      d">Address:</p>
+        <address>
+      
+          <textarea id="add" name="address" rows="4" cols="50">
+      </textarea>
+        </address> 
+      
+        <input type="number" id="pin" placeholder="Pincode">
+        <p class="gend">Gender:</p>
+        <input type="radio" id="gen" name="gender" value="male">
+        <label for="male">male</label><br>
+        <input type="radio" id="gen1" name="gender" value="female">
+        <label for="female">female</label> <br>
+      
+        <label for="food">Choice of Food:</label>
+      
+        <select id="food" multiple>
+          <option value="None">None</option>
+          <option value="Vegmeals">Vegmeals</option>
+          <option value="Non-veg meals">Non-veg meals</option>
+          <option value="Parrota">Parrota</option>
+          <option value="Dosai">Dosai</option>
+          <option value="Mini Meals">Mini Meals </option>
+        </select><br>
+        <p class="state">State:</p>
+        <input type="text" id="state" placeholder="State"><br>
+        <p class="cou">Country:</p>
+        <input type="text" id="country" placeholder="Country">
+        <input type="Submit" value="Submit" />
+        <input type="reset" value="clear" />
+      </form>
+      
+      <h1>Tabular Column:</h1>
+      
+      <table border=5 id="mytable">
+        <tr>
+          <td>First Name</td>
+          <td>Last Name</td>
+          <td>Address</td>
+          <td>Pincode</td>
+          <td>Gender</td>
+          <td>Choice of Food</td>
+          <td>State</td>
+          <td>Country</td>
+        </tr>
+      
+      </table>
+    
+    </table> 
+    <script src='script.js'></script>
+</body>
+</html>
